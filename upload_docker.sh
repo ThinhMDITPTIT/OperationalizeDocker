@@ -6,10 +6,14 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
+dockerpath=tonytmdprefinal
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login -u dockertonymd
+docker tag tonytmdprefinal dockertonymd/dockerprojfinal:tonytmdprefinal .
 
 # Step 3:
 # Push image to a docker repository
+docker push dockertonymd/dockerprojfinal:tonytmdprefinal
