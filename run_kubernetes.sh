@@ -9,7 +9,7 @@ dockerpath=tonytmdprefinal
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run $dockerpath --image=dockertonymd/dockerprojfinal:tonytmdprefinal
+kubectl run $dockerpath --image=dockertonymd/dockerprojfinal:tonytmdprefinal --port=80
 
 # Step 3:
 # List kubernetes pods
